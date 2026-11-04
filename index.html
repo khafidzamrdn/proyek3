@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFirstWeb - Website Modern & Responsif</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">My<span>FirstWeb</span></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#features">Fitur</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti Tema">
+          <!-- Icon injected by JS -->
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">🚀 Selamat Datang di Website Pertama</span>
+      <h1>Wujudkan Ide Kreatif Anda Bersama <span>MyFirstWeb</span></h1>
+      <p>Platform web modern, cepat, dan responsif yang dirancang untuk memberikan pengalaman pengguna terbaik di semua perangkat.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">Jelajahi Fitur</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Kami</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-card-mockup">
+        <div class="mockup-header">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="mockup-body">
+          <h3>Statistik Pengunjung</h3>
+          <p>Pertumbuhan pengguna aktif secara real-time.</p>
+          <div class="stat-box">
+            <span>Total Kunjungan</span>
+            <strong id="visitorCount" style="color: var(--primary);">1,420</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="section-title">
+      <h2>Fitur Unggulan</h2>
+      <p>Dibangun dengan teknologi web modern untuk performa maksimal.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Super Cepat</h3>
+        <p>Dioptimalkan untuk kecepatan muat halaman yang kilat dan efisiensi sumber daya.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Sepenuhnya Responsif</h3>
+        <p>Tampilan yang menawan dan adaptif di semua ukuran layar, dari ponsel hingga desktop.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Mode Gelap & Terang</h3>
+        <p>Dilengkapi fitur pemindah tema otomatis dan manual sesuai kenyamanan mata Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Stats Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Desain Modern</p>
+      </div>
+      <div class="stat-item">
+        <h3>0ms</h3>
+        <p>Latensi Render</p>
+      </div>
+      <div class="stat-item">
+        <h3>24/7</h3>
+        <p>Akses Aktif</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-title">
+      <h2>Hubungi Kami</h2>
+      <p>Punya pertanyaan atau ingin berkolaborasi? Kirimkan pesan kepada kami.</p>
+    </div>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" required placeholder="Masukkan nama Anda">
+      </div>
+      <div class="form-group">
+        <label for="email">Alamat Email</label>
+        <input type="email" id="email" required placeholder="nama@email.com">
+      </div>
+      <div class="form-group">
+        <label for="message">Pesan</label>
+        <textarea id="message" required placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 MyFirstWeb. Hak Cipta Dilindungi.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
